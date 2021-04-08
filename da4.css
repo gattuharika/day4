@@ -1,0 +1,165 @@
+:root {
+    --color-primary: #eb2f64;
+    --color-primary-light: #FF3366;
+    --color-primary-dark: #BA265D;
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+
+    --line: 1px solid var(--color-grey-light-2);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+     1rem = 10px, 10px/16px = 62.5% 
+    font-size: 62.5%;
+    background-color: pink;
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grey-light-1);
+    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    margin:2rem;
+    border: 1rem;
+}
+
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border: 1rem;
+    margin: 1rem;
+    height: 100px; 
+
+}
+
+.header .search {
+    flex: 0 0 20%;
+    align-items: right center;
+    background-color: #777;
+    
+}
+
+.search input {
+    border-radius: 5rem;
+    border: none;
+}
+
+
+.content-area {
+    display: flex;
+}
+
+.content-area aside {
+    flex: 0 0 20%;
+    background-color: var(--color-grey-dark-1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin:2rem;
+    margin-left: 5px;
+    border: 1rem;
+    align-content: center;
+    background-color: #333;
+    height: 500px;
+    position:relative;
+    top:-47px;
+    left:32px;
+    font: bold;
+
+}
+
+.content-area main .pics{
+    display: flex;
+
+}
+.h1{
+    display: flex;
+
+}
+.star{
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: 10px;
+    position: absolute;
+    top: -500px;
+    bottom: 2px;
+    height: 50px;
+    align-items: center;
+
+}
+.content-area main .a{
+    display: flex;
+}
+.content-area main .a .p1{
+    flex:0 0 50%;
+    flex-direction: column;
+    height: 400px;
+    width: 600px;
+    position: relative;
+    right:-5px;
+    left:10px;
+    align-content: center;
+    border: 2rem;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: green;
+    box-sizing: 100px;
+    
+}
+.content-area main .a .p2{
+    flex:0 0 20%;
+    flex-direction: row;
+    height: 300px;
+    width: 100px;
+    position: relative;
+    left: -10px;
+    align-content: center;
+    border: 2rem;
+    margin: 3rem;
+    padding: 1rem;
+    background-color:green;
+    box-sizing: 20px;
+
+
+
+}
+ 
+    
